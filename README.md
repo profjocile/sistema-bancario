@@ -36,26 +36,30 @@ A Conta ela tem uma classe filha, então aqui a conta corrente estende a conta p
 
 Ainda continuando na conta temos o histórico, ele é um tipo de classe e essa classe é histórica, então uma conta tem um histórico, que pertence a uma conta.
 
-# Interface Transação
+## Classe abstrata (Interface) Transação
 
 O histórico tem um método que é adicionar transação, ele também tem um argumento que são as transações, onde se depositando transações, que é do tipo transação, esta é uma interface, onde essa interface que seria a classe abstrata.
-Aclasse abstrata Interface, é uma classe pai, então ela tem um método registrar que recebe uma conta, assim também temos duas classes que implementam essa interface.
-As classe que implementam a abstrata da transação são: uma de depósito e a outra é a de saque, ambas tem os atributos do valor e consequentemente a implementação do método registrar.
-Classe cliente
+
+A classe abstrata Interface, é uma classe pai, então ela tem um método registrar que recebe uma conta, assim também temos duas classes que implementam essa interface.
+
+As classe que implementam a abstrata da transação são:
+- Uma de depósito e a outra é a de saque, ambas tem os atributos do valor e consequentemente a implementação do método registrar.
+
+## Classe cliente
+
 A classe cliente tem:
 
 - endereço;
 - e tem uma lista de contas - que é do tipo conta;
 - 2 operações:
-- o primeiro é realizar transação
-- ele recebe dois atributos, que seria uma conta e a transação, onde a conta é do tipo conta e a transação é do tipo aqui da classe que estava na transação, então pode ser um saque, passar um depósito, mas a gente vai olhar ai para saber se temos um polimorfismo.
-- Adicionar conta
-- lembrando que o meu cliente pode ter várias contas, e com várias contas onde a conta é relacionada a um cliente e temos uma generalização.
 
-# Pessoa física
+A primeira é realizar transação - ele recebe dois atributos, que seria uma conta e a transação, onde a conta é do tipo conta e a transação é do tipo aqui da classe que estava na transação, então pode ser um saque, passar um depósito, mas a gente vai olhar ai para saber se temos um polimorfismo.
+Adicionar conta - lembrando que o meu cliente pode ter várias contas, e com várias contas onde a conta é relacionada a um cliente e temos uma generalização.
+
+## Pessoa física
 
 A classe pessoa física e é um tipo de cliente, ela tem:
 
 - CPF;
 - nome;
-- data de nascimento
+- data de nascimento.
